@@ -139,7 +139,8 @@ Privacy & terms
 6. Based on the content provided, search examples of components that would work well the the content and sketch out a rough idea of the website layout. (rough draft as it will change as you iterate through the design and development of the website)
    - NOTE: BUILD THE WEBSITE BASED ON CONTENT, DO NOT build a website and then try to fit in the content
 7. Design and develop the website!!!
-   - At the top of the CSS files, create a legend for colors, fonts size, font style, lineheight, letter spacing, etc.
+   1. At the top of the CSS files, create a legend for colors, fonts size, font style, lineheight, letter spacing, etc.
+   2. Start out by building the sections of the website (hero, footer, nav, CAT, etc.)
 
 ## Sections
 
