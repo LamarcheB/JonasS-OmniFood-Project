@@ -127,21 +127,6 @@ Recipe directory
 Help center
 Privacy & terms
 
-# The process of Web Design:
-
-1. ID the who's client
-2. ID what's the website's purpose
-3. ID the target audience (build a persona)
-4. determine which sections you'll have in your website
-5. Add, remove, update, merge, split sections
-   - NOTE: Pricing and Call to action (CTA) are usually at the bottom near the foot
-   - NOTE: Featured in sections are usually in or right after the hero section
-6. Based on the content provided, search examples of components that would work well the the content and sketch out a rough idea of the website layout. (rough draft as it will change as you iterate through the design and development of the website)
-   - NOTE: BUILD THE WEBSITE BASED ON CONTENT, DO NOT build a website and then try to fit in the content
-7. Design and develop the website!!!
-   1. At the top of the CSS files, create a legend for colors, fonts size, font style, lineheight, letter spacing, etc.
-   2. Start out by building the sections of the website (hero, footer, nav, CAT, etc.)
-
 ## Sections
 
 - logo + Navigation
