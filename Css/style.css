@@ -79,6 +79,7 @@ html {
       This method respects the users font size settings.
   */
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -86,15 +87,19 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+
+  /* only works if nothing is absolutely positions in the body */
+  overflow-x: hidden;
 }
 
 /****************************/
 /*        Navigation        */
 /****************************/
+
 .main-nav-list {
   display: flex;
   align-items: center;
-  gap: 3.2rem;
+  gap: 4.8rem;
   list-style: none;
 }
 
@@ -126,6 +131,28 @@ body {
   background-color: #cf711f;
 }
 
+/*       Mobile buttons       */
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.nav-mobile-icon {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.nav-mobile-icon[name="menu-sharp"] {
+}
+
+.nav-mobile-icon[name="close-sharp"] {
+  display: none;
+}
+
 /****************************/
 /*       Hero Section       */
 /****************************/
@@ -142,7 +169,7 @@ body {
   gap: 9.6rem;
   margin: 0 auto;
   max-width: 130rem;
-  padding: 0 3.2rem;
+  padding: 0 4.8rem;
 }
 
 .hero-description {
@@ -192,6 +219,7 @@ body {
 /****************************/
 
 .header {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -428,10 +456,11 @@ body {
   background-color: #fdf2e9;
   display: grid;
   grid-template-columns: 55fr 45fr;
-  align-items: center;
+  align-items: start;
 }
+
 .testimonial-container {
-  padding: 9.6rem 4.8rem;
+  padding: 9.6rem;
 }
 
 .testimonials-testimonies {
@@ -441,23 +470,21 @@ body {
   column-gap: 8rem;
 }
 
-.testimonials-testimony {
-  gap: 1.6rem;
-}
 .tesimonials-customer-img {
   width: 6.4rem;
   border-radius: 50%;
   margin-bottom: 1.2rem;
 }
+
 .testimonials-quote {
-  color: #6f6f6f;
   font-size: 1.8rem;
   line-height: 1.8;
   margin-bottom: 1.6rem;
 }
+
 .testimonial-name {
-  color: #6f6f6f;
   font-size: 1.6rem;
+  color: #6f6f6f;
   text-align: right;
 }
 
@@ -467,6 +494,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   gap: 1.6rem;
   padding: 1.6rem;
+  align-items: start;
 }
 
 .gallery-item {
@@ -474,13 +502,13 @@ body {
 }
 
 .testimonials-img {
-  width: 100%;
   display: block;
-  transition: all 0.3s;
+  width: 100%;
+  transition: all 0.4s;
 }
 
 .testimonials-img:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 /*************************************/
@@ -521,8 +549,9 @@ body {
   text-transform: uppercase;
   font-size: 1.4rem;
   font-weight: 800;
-  top: 5%;
-  right: -25%;
+  top: 3rem;
+  right: -9rem; /* top: 5%;
+  right: -25%; */
   padding: 0.8rem 10rem;
   transform: rotate(45deg);
 
@@ -665,9 +694,6 @@ body {
 
 .cta-form input::placeholder {
   color: #aaa;
-}
-
-.cta-form select {
 }
 
 .cta *:focus {
