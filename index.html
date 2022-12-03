@@ -4,29 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
+    <meta name="description"
+        content="Omnifood is an AI-powered food subscription that will make you eat healthy again, 365 days per year.">
     <!-- REQUIRED FOR RESPONSIVE DESIGN -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=" viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Create a tab icon -->
+    <link rel="icon" href="/imgs/favicon-sm.png" />
+
+    <!-- Create the icons used for favorite bookmarks on the browser homepage -->
+
+    <!-- For APPLE -->
+    <!-- img size needs to be 180x180 -->
+    <link rel="apple-touch-icon" href="imgs/favicon-180.png" />
+
+    <!-- for ANDROID -->
+    <!-- img size needs to be 192x192 and 512x512 -->
+    <!-- Need to create a file called manifest.webmanifest  -->
+    <!-- {
+            "icons": [
+                { "src": "imgs/favicon-192.png", "type": "img/png", "sizes": "192x192" },
+                { "src": "imgs/favicon-512.png", "type": "img/png", "sizes": "512x512" }
+            ]
+        } -->
+    <!-- Need to link the Manifest file -->
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/general.css" />
     <link rel="stylesheet" href="/css/queries.css" />
-    <title>OmniFood</title>
+    <title>OmniFood &mdash; Never cook again</title>
+
+
 </head>
 
 <body>
-    <header class="header -nav-open">
-        <a href="#"><img class="logo" src="/imgs/omnifood-logo.png" alt="Omnifood Logo" /></a>
+    <header class="header nav-open">
+        <a href="#heroID"><img class="logo" src="/imgs/omnifood-logo.png" alt="Omnifood Logo" /></a>
         <nav class="main-nav">
             <ul class="main-nav-list">
-                <li><a href="#" class="main-nav-link">How it works</a></li>
-                <li><a href="#" class="main-nav-link">Meals</a></li>
-                <li><a href="#" class="main-nav-link">Testimonials</a></li>
-                <li><a href="#" class="main-nav-link">Pricing</a></li>
-                <li><a href="#" class="main-nav-link nav-cta">Get Started</a></li>
+                <li><a href="#howID" class="main-nav-link">How it works</a></li>
+                <li><a href="#dietsID" class="main-nav-link">Meals</a></li>
+                <li><a href="#testimonialsID" class="main-nav-link">Testimonials</a></li>
+                <li><a href="#pricingID" class="main-nav-link">Pricing</a></li>
+                <li><a href="#ctaID" class="main-nav-link nav-cta">Get Started</a></li>
             </ul>
         </nav>
 
@@ -37,7 +61,7 @@
     </header>
 
     <main>
-        <section class="section-hero">
+        <section class="section-hero" id="heroID">
             <div class="hero">
                 <div class="hero-text-box">
                     <h1 class="heading-primary">A healthy meal delivered to your door, every single day </h1>
@@ -45,8 +69,8 @@
                         healthy
                         again. Tailored to your personal tastes and
                         nutritional needs. </p>
-                    <a class="btn btn--orange margin-right-sm" href="#">Start eating well</a>
-                    <a class="btn btn--white" href="#">Learn more &darr;</a>
+                    <a class="btn btn--orange margin-right-sm" href="#ctaID">Start eating well</a>
+                    <a class="btn btn--white" href="#howID">Learn more &darr;</a>
 
                     <div class="delivered-meals">
                         <div class="delivered-customer-imgs">
@@ -67,7 +91,7 @@
             </div>
         </section>
 
-        <section class="section-featured">
+        <section class="section-featured" id="featuredID">
             <div class="container">
                 <h2 class="header-featured-in">As featured in</h2>
                 <div class="featured-logo-box ">
@@ -81,7 +105,7 @@
             </div>
         </section>
 
-        <section class="section-how">
+        <section class="section-how" id="howID">
             <div class="container">
                 <span class="subheading">How it works</span>
                 <h2 class="heading-secondary">Your daily dose of health in 3 simple steps</h2>
@@ -128,7 +152,7 @@
                 </div>
         </section>
 
-        <section class="section-diets">
+        <section class="section-diets" id="dietsID">
             <div class="container">
                 <span class="subheading">Meals</span>
                 <h2 class="heading-secondary">OmniFood AI chooses from 5,000+ recipes</h2>
@@ -241,7 +265,7 @@
             </div>
         </section>
 
-        <section class="section-testimonials">
+        <section class="section-testimonials" id="testimonialsID">
             <div class="testimonial-container">
                 <span class="subheading">Testimonials</span>
                 <h2 class="heading-secondary">Once you try it, you can't go back!</h2>
@@ -307,7 +331,7 @@
             </div>
         </section>
 
-        <section class="section-pricing">
+        <section class="section-pricing" id="pricingID">
             <div class="container">
                 <div class="pricing-plan">
                     <span class="subheading">Pricing</span>
@@ -410,7 +434,7 @@
                 </div>
         </section>
 
-        <section class="section-cta">
+        <section class="section-cta" id="ctaID">
             <div class="container grid">
                 <div class="cta">
                     <div class="cta-text-box">
@@ -506,6 +530,7 @@
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script defer src="/scripts/script.js"></script>
 </body>
 
 </html>

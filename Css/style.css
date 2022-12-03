@@ -80,6 +80,9 @@ html {
   */
   font-size: 62.5%;
   overflow-x: hidden;
+
+  /* DOESN'T WORK WITH EDGE OR SAFARI */
+  /* scroll-behavior: smooth; */
 }
 
 body {
@@ -138,6 +141,7 @@ body {
   background: none;
   cursor: pointer;
   display: none;
+  z-index: 9999;
 }
 
 .nav-mobile-icon {
@@ -550,7 +554,8 @@ body {
   font-size: 1.4rem;
   font-weight: 800;
   top: 3rem;
-  right: -9rem; /* top: 5%;
+  right: -9rem;
+  /* top: 5%;
   right: -25%; */
   padding: 0.8rem 10rem;
   transform: rotate(45deg);
